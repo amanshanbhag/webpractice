@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: lightsalmon;
+}
+
+header{
+    background-image: linear-gradient(rgb(248, 248, 248),rgba(0, 0, 0,0.5)), url(../bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 12.5px;
+    margin-right: 4px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 3px solid transparent;
+    transition: 0.4s ease;
+}
+
+ul li a:hover{
+    background-color: rgb(139, 0, 139);
+    color: rgb(255, 160, 122);
+}
+
+ul li.active a{
+    background-color: darkmagenta;
+    color: #ffa07a;      
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: 95px;    
+}
+
+.main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color:black;
+    font-size: 55px;
+    font-family: fantasy;
+    text-shadow:darkmagenta;
+    scrollbar-darkshadow-color: darkmagenta;
+}
+
+.stitle{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.stitle h1{
+    color:black;
+    font-size: 25px;
+    font-family: Blackadder ITC;
+    text-shadow:darkmagenta;
+    scrollbar-darkshadow-color: darkmagenta;
+}
+
+.button{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+}
+
+.btn{
+    border: 4px solid darkmagenta;
+    padding: 10px 30px;
+    color:darkmagenta;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: darkmagenta;
+    color: rgb(255, 160, 122);
+}
+
+.images{
+    padding: 50px 0px;
+}
+
+.images .section-title{
+    position: relative;
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.images .section-title p{
+    background-color: lightsalmon;
+    color: black;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    letter-spacing: 1px;    
+}
+
+.custom_pd{
+    padding: 15px;
+}
+
+.hovereffect{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hovereffect .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 1;
+    filter: alpha(opacity=0);
+    transform: translate(460px, -100px) rotate(180deg)
+}
+
+.hovereffect img{
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: ease-in-out;
+}
+
+.hovereffect h3{
+    text-transform: uppercase;
+    color: lightsalmon;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: darkmagenta;
+}
+
+.hovereffect a.info{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid darkmagenta;
+    margin: 50px 0 0 0;
+    background-color: lightsalmon;
+    transform: translateY(-200px);
+    transition: 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover{
+    box-shadow: 0 0 5px darkmagenta;
+}
+
+.hovereffect:hover .overlay{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition-delay: 0s;
+    transform: translate(0px,0px);
+}
+
+.hovereffect:hover h2{
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info{
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+
+section{
+    background-color: lightsalmon;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+h3{
+    text-align: center;
+    color: darkmagenta;
+}
+
+form{
+    margin: 20px auto;
+    width: 320px;
+    position: relative;
+}
+
+input{
+    size: 10px;
+    font-size: inherit;
+}
+
+input[type="text"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkmagenta;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th{
+    text-align:left;
+    padding: 4px 30px 4px 8px;
+}
+
+table td{
+    border: 2px solid darkmagenta;
+    padding: 4px 8px;
+    background-color: none;
+}
+
+.contactmethods{
+    padding: 4px 8px;
+    position: absolute;
+    top: 15%;
+}
+
+.contactmethods table{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slide-container{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container{
+    width: 3000px;
+    height: 500px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container{
+    top: -20px;
+    position: relative;
+}
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: lightsalmon;
+}
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+    left: -500px;
+}
+
+#slider-image-3:target ~ .image-container{
+    left: -1000px;
+}
+
+#slider-image-4:target ~ .image-container{
+    left: -1500px;
+}
+
+#slider-image-5:target ~ .image-container{
+    left: -2000px;
+}
+
+#slider-image-6:target ~ .image-container{
+    left: -2500px;
+}
+
+.selltext{
+    background-color: lightsalmon;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
